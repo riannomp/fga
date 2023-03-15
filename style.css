@@ -1,11 +1,10 @@
-
 body {
     margin: 0;
     font-family: "Lucida Grande";
 }
 
 .container {
-    max-width: 1920px;
+    /* max-width: 1920px; */
     width: 100%;
     margin: 0 auto;
     /* padding: 0 15px; */
@@ -109,22 +108,47 @@ header {
     border: 2px solid white;
 }
 
-.content-wrapper {
+.content-wrapper1 {
     padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     padding-left: 400px;
     padding-right: 400px;
     /* background-color: red; */
     /* border: 5px solid red; */
-
+    display: flex;
 }
+
+.content-wrapper-full {
+    padding-top: 80px;
+    /* padding-bottom: 80px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-color: red; */
+    /* border: 5px solid red; */
+    display: flex;
+}
+
+.content-wrapper-form {
+    padding-top: 80px;
+    /* padding-bottom: 80px; */
+    padding-left: 400px;
+    padding-right: 400px;
+    /* background-color: red; */
+    /* border: 5px solid red; */
+    display: flex;
+}
+
 
 .content1 {
     align-content: center;
 }
 
+.content2 {
+    position: relative;
+}
+
 .heading {
-    padding-top: 80px;
+    /* padding-top: px; */
     padding-bottom: 20px;
     align-items: left;
     text-align: left;
@@ -195,14 +219,13 @@ header {
     background-color: rgba(20, 54, 80, .96);
     border-radius: 32px;
     padding: 12px 12px;
-    margin-top: 50px;
-    margin-left: 200px;
     display: flex;
-    width: 220px;
+    width: 200px;
     text-align: center;
-
+    font-family: Barlow, sans-serif;
+    text-align: center;
+    margin: 20px 0;
 }
-
 
 .content2-item {
     float: left;
@@ -213,8 +236,11 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+    min-width: 0;
     padding: 10px;
 }
+
+
 
 .card2 p {
     position: absolute;
@@ -228,5 +254,80 @@ header {
 }
 
 img {
-    border-radius: 10%;
+    border-radius: 1rem;
+}
+
+/* content3 */
+
+.member {
+    float: left;
+    width: 15%;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 20px;
+    margin: 10px;
+}
+
+.member-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.member h3 {
+    font-size: 21px;
+    font-family: Barlow, sans-serif;
+    margin: 10px 0px 0px;
+}
+
+.text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+    font-family: Barlow, sans-serif;
+}
+
+.form-item {
+    float: left;
+    width: 45%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.form-item h3 {
+    font-size: 24px;
+    font-family: Barlow, sans-serif;
+    color: rgba(20, 54, 80, 0.96);
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size:24px;
+    font-family: Barlow, sans-serif;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid rgba(20, 54, 80, 0.96);
+}
+
+input:focus {
+    outline: none;
+}
+.btn-form {
+    color: white;
+    background-color: rgba(20, 54, 80, .96);
+    border-radius: 2rem;
+    padding: 12px 12px;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    font-family: Barlow, sans-serif;
+    text-align: center;
+    
 }
