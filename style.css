@@ -1,23 +1,24 @@
-body {
+html, body {
     margin: 0;
+    width: 100%;
     font-family: "Lucida Grande";
 }
 
 .container {
-    /* max-width: 1920px; */
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     /* padding: 0 15px; */
 }
+
 /* HEADER */
 header {
-    background-color: rgba(95, 93, 93, 0.9);
+    background-color:  rgba(34, 49, 52, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     padding: 10px 10px;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 
@@ -33,10 +34,47 @@ header {
     float: right;
     margin-right: 30px;
 }
+.btn-nav{
+    padding: 0 40px;
+    color: black;
+    line-height: 55px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: barlow, sans-serif;
+    text-transform: uppercase;
+
+}
+.daftar:hover{
+    background-color: #ffe58e
+}
+
+.login:hover{
+    background-color:#64c0c7;
+}
+
+.logo img{
+    height: 65px;
+}
+
+.daftar{
+    background-color: #f8d355;
+    margin-right: 20px;
+}
+
+.login{
+    background-color: #00c4d2;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+
 
 /* MAIN CONTENT */
 .main {
-    background-image: url(asset/img/main-mage.jpeg);
+    background-image: url(asset/img/bg1.jpg);
     background-size: cover;
     display: flex;
     height: 800px;
@@ -47,14 +85,19 @@ header {
 }
 
 .main h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 52px;
+    margin-bottom: 40px;
     margin-top: 10px;
+    font-family: Barlow, sans-serif;
 }
 
 .btn-wrapper {
     text-align: center;
     margin: 20px 0;
+}
+
+.more {
+    background-color: red;
 }
 
 .btn-wrapper p {
@@ -74,7 +117,13 @@ header {
     color: white;
     border-radius: 10px;
     padding: 12px 12px;
+    display: inline-block;
+    opacity: 0.8;
     margin: 0 auto;
+}
+
+.btn:hover {
+    opacity: 1;
 }
 
 .btn-menu {
@@ -97,27 +146,26 @@ header {
 /* CONTENT 1 */
 .content-wrapper1 {
     padding-top: 80px;
-    /* padding-bottom: 80px; */
+    padding-bottom: 80px;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: #dfdede;
+    /* background-color: #dfdede; */
     /* border: 5px solid red; */
-    display: flex;
 }
 
 .content-wrapper-full {
     padding-top: 80px;
-    /* padding-bottom: 80px; */
+    padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #dfdede;
+    /* background-color: #dfdede; */
     /* border: 5px solid red; */
     display: flex;
 }
 
 .content-wrapper-form {
     padding-top: 80px;
-    /* padding-bottom: 80px; */
+    padding-bottom: 80px;
     padding-left: 10%;
     padding-right: 10%;
     /* background-color: red; */
@@ -148,6 +196,11 @@ header {
     font-family: Barlow, sans-serif;
 }
 
+.heading p {
+    font-size: 21px;
+    font-family: Barlow, sans-serif;
+    color: rgba(20, 54, 80, .75);
+}
 
 .colorspan {
     color: #00c4d2;
@@ -188,6 +241,7 @@ header {
     font-family: Barlow, sans-serif;
     color: rgba(20, 54, 80, .75);
 }
+
 .content-item li {
     margin-top: 20px;
     font-family: Barlow, sans-serif;
@@ -231,7 +285,9 @@ header {
     padding: 10px;
 }
 
-
+.card2:hover {
+    transform: scale(1.05);
+}
 
 .card2 p {
     position: absolute;
@@ -252,13 +308,17 @@ img {
 
 .member {
     float: left;
-    width: 15%;
+    width: 12.5%;
     background-color: #fff;
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     padding: 20px;
     margin: 10px;
+}
+
+.member:hover {
+    transform: scale(1.05);
 }
 
 .member-icon {
@@ -284,7 +344,7 @@ img {
 
 .form-item {
     float: left;
-    width: 45%;
+    width: 100%;
     padding: 20px;
     margin: 10px;
 }
@@ -295,23 +355,33 @@ img {
     color: rgba(20, 54, 80, 0.96);
 }
 
-input {
+input, select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    font-size:24px;
+    font-size: 24px;
     font-family: Barlow, sans-serif;
     box-sizing: border-box;
     border: none;
-    border-bottom: 3px solid rgba(20, 54, 80, 0.96);
+    border: 3px solid rgba(20, 54, 80, 0.96);
 }
 
 input:focus {
     outline: none;
 }
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 24px;
+    font-family: Barlow, sans-serif;
+    box-sizing: border-box;
+    border: 3px solid rgba(20, 54, 80, 0.96);
+}
+
 .btn-form {
     color: white;
-    background-color: rgba(20, 54, 80, .96);
+    background-color: rgba(20, 54, 80, 0.96);
     border-radius: 2rem;
     padding: 12px 12px;
     display: flex;
@@ -320,29 +390,144 @@ input:focus {
     align-items: center;
     font-family: Barlow, sans-serif;
     text-align: center;
-    
+
 }
-iframe{
+
+iframe {
     border-radius: 2rem;
 }
-.btn-download{
+
+.btn-download {
     height: 70px;
     width: 40%;
     border-radius: 2rem;
     background-color: #f8d355;
-    margin-left: 20%;
-    margin-right: 20%;
+
     padding: 12px 32px;
 }
-.btn-download h4{
+
+.btn-download h4 {
     font-size: 24px;
     margin: 0px 40px 0px 0px;
-    color: rgba(20, 54, 80, .96);
+    color: rgba(20, 54, 80, 0.96);
     font-family: Barlow, sans-serif;
 }
-.btn-download img{
+
+.btn-download img {
     margin-top: 10px;
     float: right;
     display: flex;
     flex-direction: column;
+}
+
+.btn-message {
+    align-items: center;
+    margin: 20px 0;
+}
+
+.send {
+    background-color: rgba(16, 40, 59, 0.96);
+}
+
+.btn1 {
+    padding: 12px 24px;
+    margin: 20px 0;
+    color: white;
+    display: inline-block;
+    border-radius: 2rem;
+    text-align: center;
+    width: 40%;
+    font-family: Barlow, sans-serif;
+}
+
+.btn1:hover {
+    opacity: 1;
+}
+
+
+footer{
+    width: 100%;
+    padding: 30px 0;
+    background-image: url(https://fithub.id/wp-content/uploads/2022/02/bg-footer-1.jpg);
+    background-size: cover;
+}
+
+.foo-top{
+    height: 90px;
+    position: relative;
+}
+
+.foo-top p{
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family:Barlow, sans-serif;
+    color: white;
+    display: inline;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    
+}
+
+.foo-top img{
+    height: 70px;
+    background-color: #00c4d2;
+    border-radius: 15px;
+    margin-right: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.foo-menus{
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid #f8d355;
+}
+
+.foo-menu{
+    float: left;
+    margin-left: 15px;
+    padding-right: 25px;
+    width: 150px;
+}
+
+.foomenu-list a{
+    display: block;
+    color: white;
+    font-family: barlow, sans-serif;
+    padding-bottom: 5px;
+}
+
+.foomenu-head{
+    color: white;
+    font-family: barlow, sans-serif;
+}
+
+.foo-abouts{
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid #f8d355;
+    font-family: barlow, sans-serif;
+}
+
+.about-left{
+    float: left;
+    width: 250px;
+    color: white;
+    padding-left: 20px;
+}
+
+.about-right{
+    float: right;
+    padding-right: 20px;
+    color: white;
+}
+
+.foo-copyright{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: barlow, sans-serif;
 }
